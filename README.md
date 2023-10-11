@@ -31,3 +31,28 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+
+-> T(n) = 3T ($\frac{n}{3}$) + $n^5$
+
+-> T(n) = 3(3T($\frac{n}{9}$) + ($\frac{n}{3})^5$ + $n^5$
+
+-> T(n) = 9T($\frac{n}{9}$) + 3 ($\frac{n}{3})^5$ + $n^5$
+
+-> Proof 
+
+-> T(n) = $3^i$ T ($\frac{n}{3}$) + $\displaystyle\sum_{j=0}^{i-1}$ ($\frac{n}{3^5})^5$
+
+-> T(n) = $3^i$ T ($\frac{n}{3^i}$) + $2n^5$
+
+-> i = $\(log_{3}n)$
+
+-> T(n) = $3^(log_{3}n)$ T ($\frac{n}{3^(log_{3}n)})$ + $2n^5$
+
+-> $\in$ $\Theta$ ($n^5$)
+
+=> Overall, In simpler terms, when 'n' gets bigger, the time the function takes to finish can get much bigger. 
+
+ 
+=> Sources used: Professor in lecture and TA in lab time
+
